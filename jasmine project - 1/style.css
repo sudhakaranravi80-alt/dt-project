@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7f4;
+    color: #0e180e;
+}
+
+.page {
+    min-height: 100vh;
+    padding: 60px 0;
+}
+
+.cover-page {
+    padding: 0;
+    background: url("images/jasmine-bg.jpg") center/cover fixed;
+}
+
+.overlay {
+    min-height: 100vh;
+    background: rgba(0, 14, 7, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cover {
+    color: white;
+    max-width: 800px;
+    padding: 30px;
+}
+
+.cover p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.cover h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.cover h2 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.cover h3 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.container > h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.intro {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+/* TEAM */
+
+.team-box {
+    max-width: 750px;
+    margin: 30px auto;
+}
+
+.member,
+.mentor,
+.design-box,
+.steps div,
+.gallery div,
+.video-box {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.member {
+    text-align: left;
+    margin: 15px 0;
+    border-left: 4px solid #527a45;
+}
+
+.member h3 {
+    margin-bottom: 8px;
+}
+
+.member p {
+    line-height: 1.6;
+}
+
+.mentor {
+    max-width: 750px;
+    margin: 25px auto;
+}
+
+/* DESIGN THINKING */
+
+.design-box {
+    max-width: 750px;
+    margin: 35px auto;
+}
+
+.design-box img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.design-box p {
+    line-height: 1.6;
+}
+
+.section-title {
+    margin: 45px 0 20px;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.steps div {
+    padding: 18px 10px;
+}
+
+.steps b {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.steps h3 {
+    margin-bottom: 8px;
+}
+
+.steps p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* INNOVATION */
+
+.video-box {
+    max-width: 750px;
+    margin: 35px auto;
+}
+
+.video-box video {
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.video-box p {
+    line-height: 1.6;
+}
+
+/* GALLERY */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.gallery + .gallery{
+    margin-top: 60px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery h3 {
+    margin-top: 12px;
+}
+
+/* BUTTON */
+
+button {
+    border: none;
+    background: #527a45;
+    color: white;
+    padding: 13px 28px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+button:hover {
+    background: #3e6134;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 60px;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .cover h1 {
+        font-size: 34px;
+    }
+
+    .cover h2 {
+        font-size: 20px;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: 2fr;
+    }
+
+    .page {
+        padding: 40px 0;
+    }
+}
